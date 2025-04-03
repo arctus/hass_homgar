@@ -4,16 +4,14 @@ import os
 import pytz
 from datetime import datetime, timedelta
 from typing import Optional, List
-from azure.communication.email import EmailClient
-import redis
 from psycopg2 import sql
 import psycopg2
 import requests
-from devices import HomgarHome, MODEL_CODE_MAPPING, HomgarHubDevice, TemperatureAirSensor
+from api.devices import HomgarHome, MODEL_CODE_MAPPING, HomgarHubDevice, TemperatureAirSensor
 from logutil import TRACE, get_logger, logging
 
 logger = get_logger(__file__)
-timezone = pytz.timezone('Europe/Paris')
+timezone = pytz.timezone('Europe/Madrid')
 
 class HomgarApiException(Exception):
     def __init__(self, code, msg):
