@@ -37,7 +37,6 @@ class HomgarDevice:
         self.model = model
         self.model_code = model_code
         self.name = name
-        self.alert_name = name
         self.did = did  # the unique device identifier of this device itself
         self.mid = mid  # the unique identifier of the sensor network
         self.alerts = alerts
@@ -99,7 +98,6 @@ class HomgarDevice:
         :param s: The value to parse and apply
         """
         raise NotImplementedError()
-    
 
 
 class HomgarHubDevice(HomgarDevice):
