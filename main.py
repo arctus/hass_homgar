@@ -12,7 +12,6 @@ from api.logutil import get_logger, TRACE
 logging.addLevelName(TRACE, "TRACE")
 logger = get_logger(__file__)
 
-
 def demo(api: HomgarApi, config):
     api.ensure_logged_in(config['email'], config['password'])
     for home in api.get_homes():

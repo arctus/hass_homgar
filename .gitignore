@@ -139,3 +139,6 @@ config.yml
 cache.pickle
 
 db
+
+# config
+config.yml

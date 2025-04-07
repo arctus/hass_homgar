@@ -7,7 +7,7 @@ from typing import Optional, List
 import requests
 
 from api.devices import HomgarHome, MODEL_CODE_MAPPING, HomgarHubDevice, TemperatureAirSensor
-from logutil import TRACE, get_logger, logging
+from api.logutil import TRACE, get_logger, logging
 
 logger = get_logger(__file__)
 
